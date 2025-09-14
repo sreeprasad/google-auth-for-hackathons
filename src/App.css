@@ -1,38 +1,114 @@
+/* src/App.css - Replace the entire content with this */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.auth-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+.auth-container h1 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.login-section p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.google-btn {
+  background: #4285f4;
   color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.google-btn:hover {
+  background: #3367d6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.google-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.user-section {
+  margin-top: 1rem;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.user-section h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.user-section p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.signout-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signout-btn:hover {
+  background: #c82333;
+}
+
+.error {
+  color: #dc3545;
+  background: #f8d7da;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.setup-note {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.setup-note h3 {
+  color: #856404;
+  margin-bottom: 0.5rem;
+}
+
+.setup-note p {
+  color: #856404;
+  margin: 0;
 }
